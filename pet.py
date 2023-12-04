@@ -14,14 +14,14 @@ class Pet(pygame.sprite.Sprite):
         self.x_speed = 0
         self.y_speed = 0
     def move_up(self):
-        self.y_speed = -1*PLAYER_SPEED
+        self.y_speed = -1*PET_SPEED
     def move_down(self):
-        self.y_speed = PLAYER_SPEED
+        self.y_speed = PET_SPEED
     def move_left(self):
-        self.x_speed = -1*PLAYER_SPEED
+        self.x_speed = -1*PET_SPEED
         self.image = self.forward_image
     def move_right(self):
-        self.x_speed = PLAYER_SPEED
+        self.x_speed = PET_SPEED
         self.image = self.reverse_image
     def stop(self):
         self.x_speed = 0

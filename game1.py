@@ -164,14 +164,7 @@ while player_lives > 0 and pet_lives > 0 and running:
         add_star(1)
         # adds an extra titan to the screen for player to have more options to kill
         add_titan(1)
-
-        #PLAYER_SPEED += 10
-    #player.update()
-    #if HEROES == 0:
-        #add_batman(1)
-
-
-
+        
     # check if batman is off the screen and respawn him
     for batman in HEROES:
         if batman.rect.x < -batman.rect.width+100:  # use the tile size
