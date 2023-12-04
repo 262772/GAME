@@ -4,6 +4,15 @@
 OBJECTIVE:
 COLLIDE WITH AS MANY TITANS AS POSSIBLE
 
+CHARACTERS:
+
+knight = player that needs to collide with "titan" monsters to increase score
+dog = pet that collects powerups for player
+fire_monster = enemy
+batman = enemy
+star = collectable for power-up
+titan = collectable for score
+
 HINTS:
 
 1.) fire monsters respawn at bottom of screen so
