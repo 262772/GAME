@@ -1,7 +1,7 @@
 import pygame
 from parameters import *
 class Player(pygame.sprite.Sprite):
-    def __init__(self, x,y):
+    def __init__(self, x, y):
         super().__init__()
         self.forward_image = pygame.image.load("assets/CHARACTERS/MC_game.png").convert()
         self.forward_image.set_colorkey((0, 0, 0))
@@ -13,6 +13,7 @@ class Player(pygame.sprite.Sprite):
         self.rect.center = (x, y)
         self.x_speed = 0
         self.y_speed = 0
+   #following functions move player different directions
     def move_up(self):
         self.y_speed = -1*PLAYER_SPEED
     def move_down(self):
@@ -26,6 +27,8 @@ class Player(pygame.sprite.Sprite):
     def stop(self):
         self.x_speed = 0
         self.y_speed = 0
+
+    #creates boundaries for character when it moves
     def update(self):
         self.x += self.x_speed
         self.y += self.y_speed

@@ -12,6 +12,7 @@ class Batman(pygame.sprite.Sprite):
         self.y = y
         self.speed = random.uniform(MIN_BATMAN_SPEED, MAX_BATMAN_SPEED)
         self.rect.center = (x, y)
+    #batman only needs to move to the left
     def update(self, screen):
         self.x -= self.speed
         self.rect.x = self.x
